@@ -3,26 +3,118 @@
  <head>
    <title>Courtney Nguyen Portfolio</title>
    <link rel="stylesheet" href="css/styles.css">
+   <style>
+    body {
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /* background-image: url("images/landscape.jpg"); */
+      background-size: cover;
+      background-position: center;
+      opacity: 0.5; /* Adjust the value between 0 and 1 to control the transparency */
+      z-index: -1;
+    }
+
+    nav {
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .brand {
+      font-weight: bold;
+      color: #fff;
+      font-size: 20px;
+    }
+
+    .menu {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+    }
+
+    .menu li {
+      margin-left: 15px;
+    }
+
+    .menu li:first-child {
+      margin-left: 0;
+    }
+
+    .menu li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 18px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .black-heading {
+      text-align: left;
+      color: black;
+    }
+
+    .grey-heading {
+      text-align: left;
+      color: rgb(88, 86, 86);
+    }
+
+    .blurb {
+      display: flex;
+    }
+
+    .blurb-content {
+      margin-right: 20px;
+    }
+
+    .profile-pic {
+      width: auto;
+      height: 200px;
+      border-radius: 50%;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    .blurb p {
+      text-align: left;
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+   </style>
  </head>
  <body>
-   <nav>
-     <ul>
-       <li><a href="/">Home</a></li>
-       <li><a href="/about">About</a></li>
-       <li><a href="resume.html">Resume</a></li>
-       <li><a href="/blog">Blog</a></li>
-     </ul>
-   </nav>
-   <div class="container">
-     <div class="blurb">
-       <h1>Hi, I am Courtney Nguyen!</h1>
-       <p>This is my first page for my personal website!</p>
-     </div>
-   </div>
-   <footer>
-   <ul>
-     <li><a href="mailto:YOUREMAIL">cn9hws@virginia.edu</a></li>
-   </ul>
-   </footer>
+  <nav>
+    <div class="brand">Courtney Nguyen</div>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="#">Projects</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="blurb">
+      <div class="blurb-content">
+        <h1 class="black-heading">Courtney Nguyen.</h1>
+        <h1 class="grey-heading">A passionate Computer Science & Statistics Student at UVA</h1>
+        <p>Currently, I am working as a Software Developer Intern in the Single-Family Division at Freddie Mac. As I approach my graduation in Spring 2024, I am actively seeking full-time opportunities to apply my skills and passion. With a solid foundation in programming and a genuine interest in data-driven solutions, I am committed to making a significant impact in the dynamic field of technology.</p>
+      </div>
+      <img class="profile-pic" src="images/profile_pic.jpg" alt="Profile Picture">
+    </div>
+  </div>
+  <footer>
+    <ul>
+      <li><a href="mailto:YOUREMAIL">cn9hws@virginia.edu</a></li>
+    </ul>
+  </footer>
  </body>
 </html>
