@@ -1,115 +1,129 @@
 <!DOCTYPE html>
-<html>
- <head>
-   <title>Courtney Nguyen Portfolio</title>
-   <link rel="stylesheet" href="css/styles.css">
-   <style>
-    body {
-      position: relative;
-    }
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+	
 
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center;
-      opacity: 0.5; /* Adjust the value between 0 and 1 to control the transparency */
-      z-index: -1;
-    }
+	<link rel="shortcut icon" href="assets/images/profile_pic.jpg">
+	
+	<!-- Bootstrap -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<!-- Icons -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- Fonts -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="assets/css/styles.css">
 
-    nav {
-      height: 50px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 20px;
-    }
+</head>
+<body class="home">
 
-    .menu {
-      list-style-type: none;
-      display: flex;
-      align-items: center;
-      margin-left: auto;
-      justify-content: flex-end;
-    }
+<header id="header">
+	<div id="head" class="parallax" parallax-speed="2">
+		<h1 id="logo" class="text-center">
+			<img class="img-circle" src="assets/images/profile_pic.jpg" alt="">
+			<span class="title">Courtney Nguyen</span>
+			<span class="tagline">Computer Science & Statistics Student at UVA<br>
+				<a href="mailto:#">cn9hws@virginia.edu</a></span>
+		</h1>
+	</div>
 
-    .menu li {
-      margin-left: 15px;
-    }
+	<nav class="navbar navbar-default navbar-sticky">
+		<div class="container-fluid">
+			
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			</div>
+			
+			<div class="navbar-collapse collapse">
+				
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="resume2.html">Resume</a></li>
+					<li><a href="project.html">Projects</a></li>
+				</ul>
+			</div>		
+		</div>	
+	</nav>
+</header>
 
-    .menu li:first-child {
-      margin-left: 0;
-    }
+<main id="main">
 
-    .menu li a {
-      text-decoration: none;
-      color: grey;
-      font-size: 18px;
-    }
+	<div class="container">
+		
+		<div class="row section topspace">
+			<div class="col-md-12">
+				<p class="lead text-center text-muted">Currently, I am working as a <a>Software Developer Intern</a> in the Single-Family Division at Freddie Mac. As I approach my graduation in Spring 2024, I am actively seeking full-time opportunities to apply my skills and passion. With a solid foundation in programming and a genuine interest in data-driven solutions, I am committed to making a significant impact in the dynamic field of technology. </p>
+			</div>
+		</div> 
+
+		<div class="row section clients topspace">
+			<h2 class="section-title"><span>Skills</span></h2>
+			<div class="col-lg-12">
+				<p>
+				</p>
+			</div>
+		</div> <!-- /section -->
+
+</main>
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Contact</h3>
+				<div class="widget-body">
+					<p>+1 571 420 9181<br>
+						<a href="mailto:#">cn9hws@virginia.edu</a><br>
+						<a href="mailto:#">cnnguyen387@virginia.edu</a><br>
+					</p>	
+				</div>
+			</div>
+
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Follow Me</h3>
+				<div class="widget-body">
+					<p class="follow-me-icons">
+						<a href="https://www.linkedin.com/in/courtneynnguyen/"><i class="fa fa-linkedin fa-2"></i></a>
+						<a href="https://github.com/CourtneyN387"><i class="fa fa-github fa-2"></i></a>
+					</p>
+				</div>
+			</div>
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+
+<footer id="underfooter">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p>Ashburn, VA 20147 </p>
+				</div>
+			</div>
+
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p class="text-right">
+						Copyright &copy; 2023, Courtney Nguyen<br> 
+				</div>
+			</div>
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
 
 
-    .black-heading {
-      text-align: left;
-      color: black;
-    }
 
-    .grey-heading {
-      text-align: left;
-      color: rgb(88, 86, 86);
-    }
-
-    .blurb {
-      display: flex;
-    }
-
-    .blurb-content {
-      margin-right: 20px;
-    }
-
-    .profile-pic {
-      width: auto;
-      height: 200px;
-      border-radius: 50%;
-      margin-top: 40px;
-      margin-bottom: 20px;
-    }
-
-    .blurb p {
-      text-align: left;
-      color: black;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 14px;
-    }
-   </style>
- </head>
- <body>
-  <nav>
-    <ul class="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  <div class="container">
-    <div class="blurb">
-      <div class="blurb-content">
-        <h1 class="black-heading">Courtney Nguyen.</h1>
-        <h1 class="grey-heading">A passionate Computer Science & Statistics Student at UVA</h1>
-        <p >Currently, I am working as a Software Developer Intern in the Single-Family Division at Freddie Mac. As I approach my graduation in Spring 2024, I am actively seeking full-time opportunities to apply my skills and passion. With a solid foundation in programming and a genuine interest in data-driven solutions, I am committed to making a significant impact in the dynamic field of technology.</p>
-      </div>
-      <img class="profile-pic" src="images/profile_pic.jpg" alt="Profile Picture">
-    </div>
-  </div>
-  <footer>
-    <ul>
-      <li><a href="mailto:YOUREMAIL">cn9hws@virginia.edu</a></li>
-    </ul>
-  </footer>
- </body>
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/template.js"></script>
+</body>
 </html>
