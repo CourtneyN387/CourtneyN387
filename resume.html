@@ -1,178 +1,220 @@
- <!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Courtney Nguyen - Resume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #f4f4f4;
+      font-family: "Times New Roman", Times, serif;
+      margin: 30px;
     }
-
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 24px;
-    }
-
-    h2 {
-      color: #666;
-      font-size: 18px;
-      margin-top: 30px;
-    }
-
-    section {
-      background-color: #fff;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 4px;
-    }
-
-    ul {
-      margin: 0;
-      padding: 0;
-    }
-
-    li {
-      list-style-type: none;
+    
+    h1, h2 {
       margin-bottom: 10px;
     }
-   
-   .date-container {
+    
+    h2 {
+      color: #666;
+    }
+    
+    .section {
+      margin-bottom: 30px;
+    }
+    
+    .section h2 {
+      border-bottom: 1px solid #666;
+      padding-bottom: 5px;
+    }
+    
+    .section ul {
+      padding-left: 20px;
+      margin-top: 5px;
+    }
+    
+    .section ul li {
+      margin-bottom: 5px;
+    }
+    
+    .section .dates {
+      color: #666;
+      text-align: right;
+      float: right;
+    }
+    
+    .contact-info {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    .contact-info p {
+      margin: 5px 0;
+    }
+    
+    .link {
+      color: #0077B5;
+    }
+    
+    .skills ul {
+      columns: 1;
+      -webkit-columns: 1;
+    }
+    .download-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #0077B5;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .download-icon {
+      margin-right: 5px;
+    }
+
+    nav {
+      height: 50px;
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
+      align-items: center;
+      padding: 0 20px;
     }
 
-    .date {
-      text-align: right;
-      color: #888;
-      font-size: 14px;
+    .menu {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      justify-content: flex-end;
     }
 
-    footer {
-      text-align: center;
-      color: #888;
-      font-size: 14px;
-      margin-top: 20px;
+    .menu li {
+      margin-left: 15px;
+    }
+
+    .menu li:first-child {
+      margin-left: 0;
+    }
+
+    .menu li a {
+      text-decoration: none;
+      color: grey;
+      font-size: 18px;
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <h1>Courtney Nguyen</h1>
-    <p> 571-420-9181 | cn9hws@virginia.edu</p>
-    <p><a href="https://www.linkedin.com/in/courtneynnguyen/" style="color: #fff; text-decoration: none;">LinkedIn</a></p>
-  </header>
-
-  <section>
-    <h2>Education</h2>
-    <ul>
-      <li>
-       <div class = "date-container">
-        <h3>University of Virginia (UVA), Charlottesville, VA</h3>
-        <p class="date">May 2024</p>
-       </div>
-       <p>Double Major in Computer Science and Statistics | Minor in Data Science</p>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="section">
+      <a class="download-button" href="CNNguyen_Resume_CS.pdf".pdf" download>
+        <i class="fas fa-download download-icon"></i> Download
+      </a>
+    </div>
+    <div class="contact-info">
+      <h1>COURTNEY NGUYEN</h1>
+      <p class="text-center">21871 Hyde Park Dr. Ashburn, VA 20147 | 571-420-9181 | <a class="link" href="mailto:cn9hws@virginia.edu">cn9hws@virginia.edu</a></p>
+      <p class="text-center"><a class="link" href="https://www.linkedin.com/in/courtneynnguyen/">LinkedIn</a></p>
+      <p class="text-center"><a class="link" href="https://github.com/CourtneyN387">GitHub</a></p>
+    </div>
+  
+    <div class="section">
+      <h2>EDUCATION</h2>
+      <ul>
+          <p class="dates">May 2024</p>
+          <h3>University of Virginia (UVA), Charlottesville, VA </h3>
+          <ul>
+            <li>B.A. Computer Science & Statistics | Minor in Data Science</li>
+            <li>GPA: 3.752 | Dean's List</li>
+            <li>Relevant Coursework: Machine Learning, Cybersecurity, Data Structures and Algorithms, Program & Data Representation, Advanced Software Development, Time Series, Data Analysis with Python, Data Science with R, Computer Architecture</li>
+          </ul>
+      </ul>
+    </div>
+  
+    <div class="section">
+      <h2>PROFESSIONAL EXPERIENCE</h2>
+      <ul>
+          <p class="dates">May 2023 - Present</p>
+          <h3>Software Developer Intern | Freddie Mac, Mclean, VA</h3>
+          <ul>
+            <li>Demonstrated technical proficiency and passion for software development during a highly competitive internship with Freddie Mac's UWRA (Underwriting and Risk Analysis) team</li>
+            <li>Engaged in Agile development process, picking up user stories and collaborating alongside senior developers to deliver high-quality software solutions within the Single Family division</li>
+            <li>Leveraged Java and Spring Boot to work on micro-services that facilitated loan approval process at Freddie Mac</li>
+          </ul>
+          <p class="dates">Jun 2022 - Aug 2022</p>
+          <h3>Software Engineering Intern | Rain Technologies Inc, Nashville, TN</h3>
+          <ul>
+            <li>Contributed to Rain's anti-fraud efforts through development of a full stack application, "Rules Lifecycle Manager" which simplified loan-related rule updates and enhanced user experience</li>
+            <li>Built a RESTful application from scratch using Golang, React, and AWS DynamoDB, showcasing proficiency in API development and software engineering best practices</li>
+            <li>Presented "Rules Lifecycle Manager" project during a company-wide meeting, communicating its objectives, implementation, and outcomes to stakeholders at various levels within the organization</li>
+          </ul>
+      </ul>
+    </div>
+  
+    <div class="section">
+      <h2>RESEARCH & ACADEMIC EXPERIENCE</h2>
+      <ul>
+          <p class="dates">Aug 2022 - Present</p>
+          <h3>Undergraduate Research Assistant | Grainger Lab | UVA, Charlottesville, VA</h3>
+          <ul>
+            <li>Conducted bioinformatics analysis of Xenopus Leavis and Xenopus tropicalis, utilizing Seurat in R to generate UMAPs, heat-maps, and perform gene set enrichment analysis on RNA sequencing data</li>
+            <li>Performed research on embryonic eye formation and development of vision in Xenopus model species, focusing on differentiation of retina, lens, and brain cells</li>
+            <li>Utilized bioinformatics and data analysis skills to identify key findings, create impactful graphics for scientific publications, and communicated research progress and outcomes to Professor in a non-technical manner</li>
+          </ul>
+          <p class="dates">Aug 2022 - Present</p>
+          <h3>Teaching Assistant (CS 2100: Data Systems & Algorithms 1) | UVA, Charlottesville, VA</h3>
+          <ul>
+            <li>Guided students in object-oriented programming, Java, concurrency, data structures and algorithms, and facilitated learning through leading labs, office hours, and review sessions</li>
+            <li>Assisted with administrative tasks, including grading, updating grades, and providing constructive feedback, while demonstrating strong communication and teaching skills</li>
+          </ul>
+      </ul>
+    </div>
+  
+    <div class="section">
+      <h2>INVOLVEMENT</h2>
+      <ul>
+          <p class="dates">Aug 2023</p>
+          <h3>KPMG Women in Advisory Conference</h3>
+          <ul>
+            <li>Selected as a participant for this exclusive event, created to empower and advance women professions in the advisory industry, fostering networking, mentorship, and career development opportunities</li>
+          </ul>
+          <p class="dates">Jun 2023</p>
+          <h3>Freddie Mac Business Case Competition</h3>
+          <ul>
+            <li>Developed and presented a proposal for Freddie Mac's Gen Z Benefit program, integrating a Flexible Credit assessment and a Graduated Interest Rate Program, highlighting how this program enables Gen Z individuals to transition from renting to homeownership at an accelerated pace</li>
+          </ul>
+          <p class="dates">Apr 2023</p>
+          <h3>Women in Computer Science (WICS) EcoHacks</h3>
+          <ul>
+            <li>Collaborated with a team to design and develop an environmentally sustainable technology solution - a gamified app, that won the category for "Best Social Good" by encouraging users to report areas of environmental harm and generated a heat map to pinpoint areas of the most critical environmental issues</li>
+          </ul>
+          <p class="dates">Mar 2023</p>
+          <h3>Meta CTF</h3>
+          <ul>
+            <li>Placed 6th in cybersecurity competition where I collaborated with a team to solve cybersecurity challenges in cryptography, web exploitation, and reverse engineering during a capture the flag (CTF) competition, utilizing coding and problem-solving skills</li>
+          </ul>
+      </ul>
+    </div>
+  
+    <div class="section">
+      <h2>TECHNICAL SKILLS</h2>
+      <div class="skills">
         <ul>
-          <li>GPA: 3.752 | Dean’s List</li>
-          <li>Relevant Coursework: Machine Learning, Cybersecurity, Data Structures and Algorithms, Program & Data Representation, Advanced Software Development, Time Series, Data Analysis with Python, Data Science with R, Computer Architecture</li>
+          <li>Java, Python, C++, Django, R, Pandas, NumPy, Seurat, Git, React, PostgreSQL, AWS DynamoDB, Spring Boot, API Development, Machine Learning, Agile Development Methodology, Cybersecurity, Data Analysis, Data Visualization</li>
         </ul>
-      </li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Related Work Experience</h2>
-    <ul>
-      <li>
-        <h3>Single Family Software Developer Intern | Freddie Mac</h3>
-        <p class="date">May 2023 – Present</p>
-        <p>Mclean, VA</p>
-        <ul>
-          <li>Demonstrated technical proficiency and passion for software development during a highly competitive internship with Freddie Mac’s UWRA (Underwriting and Risk Analysis) team</li>
-          <li>Actively engaged in the Agile development process, picking up user stories and collaborating alongside senior developers to deliver high-quality software solutions within the Single Family division</li>
-          <li>Leveraged Java and the Spring Boot to work on microservices that facilitated the loan approval process at Freddie Mac</li>
-        </ul>
-      </li>
-      <li>
-        <h3>Software Engineering Intern | Rain Technologies Inc.</h3>
-        <p class="date">June 2022 – August 2022</p>
-        <p>Nashville, TN</p>
-        <ul>
-          <li>Developed a full stack application, “Rules Lifecycle Manager” to simplify decision-making for engineers updating loan-related rules</li>
-          <li>Built a RESTful application from scratch, utilizing Golang, React, and AWS DynamoDB</li>
-          <li>Contributed to Rain’s anti-fraud efforts, enhancing user experience and security</li>
-          <li>Demonstrated proficiency with API development, Docker, and software engineering best practices</li>
-          <li>Collaborated with senior engineers to receive mentorship and guidance on design and development techniques</li>
-        </ul>
-      </li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Undergraduate Research Assistant | Grainger Lab | UVA</h2>
-    <p class="date">August 2022– Present</p>
-    <p>Charlottesville, VA</p>
-    <ul>
-      <li>Conducted bioinformatics analysis of Xenopus Leavis and Xenopus tropicalis, utilizing tools such as Seurat in R to generate UMAPs, heatmaps, and perform gene set enrichment analysis on RNA sequencing data</li>
-      <li>Contributed to research on embryonic eye formation and the development of vision in Xenopus model species, focusing on the differentiation of retina, lens, and brain cells</li>
-      <li>Utilized bioinformatics and data analysis skills to support the team in identifying key findings and creating impactful graphics for scientific publications</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Teaching Assistant (CS 2100: Data Systems & Algorithms 1) | UVA</h2>
-    <p class="date">August 2022 – Present</p>
-    <p>Charlottesville, VA</p>
-    <ul>
-      <li>Guided students in the development of key skills in object-oriented programming, Java, concurrency, and data structures and algorithms</li>
-      <li>Facilitated learning through leading labs, office hours, Piazza forums, and review sessions led by TAs</li>
-      <li>Contributed to administrative tasks including grading, updating grades, and participating in the creation of course materials</li>
-      <li>Demonstrated strong communication and teaching skills to help students succeed in the course</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Involvement</h2>
-    <ul>
-      <li>
-        <h3>KPMG Women in Advisory Conference</h3>
-        <p class="date">August 2023</p>
-        <p>Selected as a participant for this exclusive event, created to empower and advance women professions in the advisory industry, fostering networking, mentorship, and career development opportunities</p>
-      </li>
-      <li>
-        <h3>WICS EcoHacks</h3>
-        <p class="date">April 2023</p>
-        <p>Collaborated with a team to design and develop an environmentally sustainable technology solution – a gamified app, that not only won the category for “Best Social Good”, but also encouraged users to report areas of environmental harm and generated a heat map to pinpoint areas of the most critical environmental issues</p>
-      </li>
-      <li>
-        <h3>MetaCTF</h3>
-        <p class="date">March 2023</p>
-        <p>Collaborated with a team to solve cybersecurity challenges in cryptography, web exploitation, and reverse engineering during a capture the flag (CTF) competition, utilizing coding and problem-solving skills</p>
-      </li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Technical Skills</h2>
-    <p>Java, Python, R, Golang, React, Django, AWS DynamoDB, PostgreSQL</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2023 Courtney Nguyen</p>
-  </footer>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
+
