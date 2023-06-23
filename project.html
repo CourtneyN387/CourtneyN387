@@ -19,6 +19,21 @@
       background-size: cover;
       cursor: pointer;
     }
+
+	.Schedris {
+		display: flex;
+		align-items: baseline;
+	}
+
+	.Schedris h3 {
+		margin-right: 10px;
+	}
+	#softdev {
+		font-size: 24px;
+	}
+	#data {
+		font-size: 24px;
+	}
 	</style>
 	<title>Project Page</title>
 
@@ -85,25 +100,33 @@
 			<!-- Article main content -->
 			<article class="col-sm-8 maincontent">
 				<a id="softdev">Software Development Projects</a>
-				<h3> "Schedirs" </h3>
+				<div class = "Schedris">
+					<h3> "Schedirs" </h3> 
+					<a href="https://github.com/CourtneyN387/Schedirs"><i class="fa fa-github fa-2x" style="color: black;"></i></a>
+				</div>
 				<p>This Schedule Advisor project was developed by a team of 5 following Agile Methodology, where I served as both a Developer as well as the Scrum Master. Collaboratively, we built the web application using Python and Django, incorporating features such as course search, schedule creation, and advisor approval. Throughout the development process, we followed agile practices, including iterative development, regular sprint planning, and frequent communication. By adopting this approach, we were able to efficiently manage the project, ensure effective teamwork, and deliver a high-quality application that simplifies class registration for UVA students.</p>
-				<p><img src="assets/images/mac.jpg" alt="" class="" width="100%" ></p>
+				<video src="Schedris.mov" width="640" height="360" controls>
+					Your browser does not support the video tag.
+				</video>
 				<h3>"EcoHunter" </h3>
 				<p> EcoHunter is a web application built using Django and Python that emerged as the winning project in the "Best Social Good" category during the Women in Computer Science Hackathon. This groundbreaking app aims to promote environmental sustainability through an engaging gamified experience. By empowering users to report areas of environmental harm, EcoHunter incentivizes their actions by rewarding them with points that contribute to a competitive leaderboard.
 					A standout feature of EcoHunter is its interactive heat-map, which allows users to visualize areas with the highest levels of environmental harm. This innovative tool not only empowers individuals to make informed decisions but also proves invaluable to local organizations. By leveraging the heat-map, these organizations can efficiently identify and prioritize areas that require immediate attention, enhancing their efforts in addressing environmental challenges effectively.</p>
-				<p><img src="assets/images/mac.jpg" alt="" class="" width="100%" ></p>
+				<iframe src="https://player.vimeo.com/video/817989906?h=171c3f8520" width="640" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 				<h3>"Rules Lifecycle Project"</h3>
 				<p>During my Software Engineering Internship at Rain, I had the opportunity to contribute to a significant project called Rules Lifecycle Manager, which played a crucial role in Rain's decision-making system.
 					Rain's mission revolves around providing access to funds in advance of paychecks, enabling individuals to manage their finances effectively. However, the existing process for updating certain rules related to this system required engineers to go through the production cycle each time.
 					To address this challenge, I collaborated with another intern to develop the Rules Lifecycle Manager. This full stack project aimed to simplify the process of managing and updating these rules, streamlining the workflow for engineers. We built the application from scratch using technologies such as Golang for the backend, React for the frontend, and utilized AWS DynamoDB as the database.
 					By leveraging these technologies, we created an intuitive and efficient application that allowed engineers to easily manage and modify the rules governing Rain's lending processes. The Rules Lifecycle Manager project showcased our proficiency in software engineering best practices and demonstrated our ability to develop a robust solution to optimize Rain's operations.</p>
-				<p><img src="assets/images/mac.jpg" alt="" class="" width="100%" ></p>			
-				<a id="data">Data Related Projects</a>
+				<video src="RulesLifecycleManager.mov" width="640" height="360" controls>
+					Your browser does not support the video tag.
+				</video>		
+				<h3>  </h3>
+				<a id="data">Data Science</a>
 				<h3> "Detecting Bias in Social Media Posts" </h3>
 				<p> The "Detecting Bias in Social Media Posts" project involved building a classifier to predict bias in social media tweets using logistic regression and support vector machines (SVM). By leveraging these machine learning algorithms and utilizing the textual content of tweets as input, the project successfully identified and categorized biased tweets. Furthermore, hyper tuning was incorporated in order to optimize the model's performance. By systematically adjusting parameters and evaluating their impact on the model's accuracy, we enhanced the predictive capabilities of our bias detection classifier. This additional step ensured that our models were optimized for the task, ultimately improving the accuracy and reliability of bias detection in social media posts.</p>
-				<p><img src="assets/images/mac.jpg" alt="" class="" width="100%" ></p>
+				<embed src="SocialMediaBias.pdf" type="application/pdf" width="100%" height="600px" />
 				<h3> "Analysis of Income Level and Its Effect on Eye Health" </h3>
-				<!-- <iframe src="https://docs.google.com/document/d/e/2PACX-1vSdGWlb5ymgd-th-2bM6GrV78YwSlNZqgwTpeC6l9nvaiv36Mi48D8KHCrggAsAB3_nGE-696LcTuZt/pub?embedded=true" width="100%" height="700px"></iframe> -->
+				<p> The "Analysis of Income Level and Its Effect on Eye Health" project explores the significance of variables in a model comparing vision impairment with a country's income level. Using a dataset of 69 countries with varying income levels, the project examines measures of eye health, including the prevalence of any far visual difficulty (AVDP) and severe or extreme visual difficulty (SEVDP), along with factors such as internet usage (PPUI), social media users (NSMU), population size (PopSize), GDP, and percent crude blindness (PCB). The analysis reveals that GDP has the most significant impact on the prevalence of any far visual difficulty, indicating that a country's income status influences the prevalence of visual impairment. Higher income countries exhibit better eye health compared to lower income countries. This finding emphasizes the role of income level in understanding and addressing eye health issues globally, highlighting the importance of socioeconomic factors in determining the prevalence of eye-related conditions.</p>
 				<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQO5FYGCDGxKdvImC4MrkrzJAXfMJxmao4UeEWZ5NLfPVxgIovoBDA69aO_e3Q8wQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="700" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 			</article>
 			<!-- /Article -->
